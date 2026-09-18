@@ -16,7 +16,7 @@ public class PROG5121Part1 {
         System.out.println("Hi, Please enter your first name");
         String firstName = input.nextLine();
         
-        System.out.println("Please enter your last nam");
+        System.out.println("Please enter your last name");
         String lastName = input.nextLine();
         
         System.out.println("Please enter your username");
