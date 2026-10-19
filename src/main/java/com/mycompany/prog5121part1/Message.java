@@ -48,11 +48,11 @@ public class Message {
     String firstWord = words[0];
     String lastWord = words[words.length - 1];
 
-    messageHash = (firstTwoDigits + ":"
+    messageHash = firstTwoDigits + ":"
             + numMessagesSent + ":"
-            + firstWord + lastWord).toUpperCase();
+            + firstWord + lastWord;
 
-    return messageHash;
+    return messageHash.toUpperCase();
 }
     public String checkMessageLength() {
     if (message != null && message.length() <= 250) {
