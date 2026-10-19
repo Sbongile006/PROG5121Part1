@@ -39,9 +39,20 @@ public class PROG5121Part1 {
         String loginPassword = input.nextLine();
 
         String loginMessage = login.returnLoginStatus(loginUsername, loginPassword);
-        
-        System.out.println(loginMessage);
-        input.close();
+
+System.out.println(loginMessage);
+
+if (loginMessage.startsWith("Welcome")) {
+    System.out.println("Welcome to QuickChat.");
+
+    System.out.print("How many messages would you like to enter? ");
+    int numberOfMessages = input.nextInt();
+    input.nextLine();
+
+    System.out.println("You selected " + numberOfMessages + " messages.");
+}
+
+input.close();
         
         
         
